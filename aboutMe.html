@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo serif">Silas Sequeira</a>
+
+        <input id="burger" type="checkbox">
+        <label for="burger" class="active">&#9776;</label>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="assets/CV.pdf"" target=" _blank" class=" btn--download">CV</a>
+        </nav>
+    </header>
+
+    <main class="marginSides">
+        <div class="container">
+            <h6 class="text-light">Dad Joke:</h6>
+            <div class="dad-joke"></div>
+        </div>
+
+        <div class="container marginTop">
+            <div class="layoutGrid">
+                <div class="infoFlex column">
+                    <div class="infoFlex column">
+                        <h3 class="title serif">Hey I'm Silas Sequeira !</h3>
+                        <p>A Design and Multimedia student at the Department of Informatics Engineering in Universty of
+                            Coimbra with strong acedemic achievement. I possess strong comunication skills,
+                            fluency in English and Portuguese. Keen to pursue a career in Graphic Design, Web
+                            Development or
+                            Illustration.</p>
+                        <a class="underline" href="projects.html">See more of my work.</a>
+                    </div>
+                    <div class="marginTop">
+                        <h6 class="text-light">Contacts</h6>
+                        <nav>
+                            <a href="https://www.linkedin.com/in/silas-sequeira-a665811bb/" target=" _blank">linkedin</a>
+                            <a href="https://www.instagram.com/silassequeira/" target=" _blank">Instagram</a>
+                            <a href="https://www.behance.net/silassequeira" target=" _blank">Behance</a>
+                            <a href="mailto:email@example.com" target=" _blank">Email</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="imgContainer imgHeight">
+                    <img class="portrait" src="/images/illustration-image.webp" fetchpriority="high" decoding="async" alt="Illustration of Portrait">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/api.js"></script>
+    <script src="/scripts/movingImg.js"></script>
+</body>
+
+</html>

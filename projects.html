@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo serif">Silas Sequeira</a>
+
+        <input id="burger" type="checkbox">
+        <label for="burger" class="active">&#9776;</label>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About</a>
+            <a href="assets/CV.pdf"" target=" _blank" class=" btn--download">CV</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="infoFlex">
+                <h2 class="serif">Take a Look at my Work !</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="layoutGrid sixColumns" id="lobster" name="lobster">
+                <div class="infoFlex column">
+                    <div class="right">
+                        <h4>45 Days Website</h4>
+                        <h5 class="text-light">2024</h5>
+                    </div>
+                    <div>
+                        <h6 class="text-light">Details</h6>
+                        <p class="textLimiter">Our multimedia object is a dating website based on the film “The Lobster”
+                            directed by Yorgos Lanthimos, which portrays a dystopia where people are forced to get
+                            married, have a partner,
+                            or be turned into animals. In this goal, we implemented the website where the user must
+                            register, fill out a form with personal questions and then they can choose and match the
+                            suggested people. They can then book a room and choose activities with their match or choose
+                            another person and have access to their profile.
+                        </p>
+                        <p class="showMore text-light">Read more</p>
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <img class="carouselItem active" src="/images/lobster-image.webp" fetchpriority="high" decoding="async" alt="lobster-image">
+                    <img class="carouselItem" src="/images/lobster-presentation.webp" loading="lazy" decoding="async" alt="lobster-presentation">
+                    <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="layoutGrid sixColumns reveal fade-bottom" id="CCDM" name="CCDM">
+                <div class="infoFlex column">
+                    <div class="right">
+                        <h4>CCDM Website</h4>
+                        <h5 class="text-light">2022</h5>
+                    </div>
+                    <div>
+                        <h6 class="text-light">Details</h6>
+                        <p class="textLimiter">Our multimedia object is a dating website based on the film “The Lobster”
+                            directed by Yorgos Lanthimos, which portrays a dystopia where people are forced to get
+                            married, have a partner,
+                            or be turned into animals. In this goal, we implemented the website where the user must
+                            register, fill out a form with personal questions and then they can choose and match the
+                            suggested people. They can then book a room and choose activities with their match or choose
+                            another person and have access to their profile.
+                        </p>
+                        <p class="showMore text-light">Read more</p>
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <img class="carouselItem active" src="/images/ccdm-image.webp" loading="lazy" decoding="async" alt="ccdm-image">
+                    <img class="carouselItem" src="/images/ccdm-presentation.webp" loading="lazy" decoding="async" alt="ccdm-presentation">
+                    <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+            
+            <div class="layoutGrid sixColumns reveal fade-bottom" id="Toaster" name="Toaster">
+                <div class="infoFlex column">
+                    <div class="right">
+                        <h4>Toaster Video</h4>
+                        <h5 class="text-light">2024</h5>
+                    </div>
+                    <div>
+                        <h6 class="text-light">Details</h6>
+                        <p class="textLimiter">Our multimedia object is a dating website based on the film “The Lobster”
+                            directed by Yorgos Lanthimos, which portrays a dystopia where people are forced to get
+                            married, have a partner,
+                            or be turned into animals. In this goal, we implemented the website where the user must
+                            register, fill out a form with personal questions and then they can choose and match the
+                            suggested people. They can then book a room and choose activities with their match or choose
+                            another person and have access to their profile.
+                        </p>
+                        <p class="showMore text-light">Read more</p>
+                    </div>
+                </div>
+                <div class="imgContainer video">
+                    <img class="carouselItem active" src="/images/toaster-image.webp" loading="lazy" decoding="async" alt="toaster-image">
+                    <video class="carouselItem" src="/videos/theToastervid.mp4" controls autoplay muted loading="lazy" decoding="async" alt="theToastervid"></video>
+                    <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="layoutGrid sixColumns reveal fade-bottom" id="Joke" name="Joke">
+                <div class="infoFlex column">
+                    <div class="right">
+                        <h4>A Joke Project</h4>
+                        <h5 class="text-light">2023</h5>
+                    </div>
+                    <div>
+                        <h6 class="text-light">Details</h6>
+                        <p class="textLimiter">Our multimedia object is a dating website based on the film “The Lobster”
+                            directed by Yorgos Lanthimos, which portrays a dystopia where people are forced to get
+                            married, have a partner,
+                            or be turned into animals. In this goal, we implemented the website where the user must
+                            register, fill out a form with personal questions and then they can choose and match the
+                            suggested people. They can then book a room and choose activities with their match or choose
+                            another person and have access to their profile.
+                        </p>
+                        <p class="showMore text-light">Read more</p>
+                    </div>
+                </div>
+                <div class="imgContainer goSides video">
+                    <img class="carouselItem active img" src="/images/ajoke-image.webp" loading="lazy" decoding="async" alt="ajoke-image">
+                    <video class="carouselItem" src="/videos/aJokevid.mp4" controls autoplay muted loading="lazy" decoding="async" alt="aJokevid"></video>
+                    <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/showMore.js"></script>
+    <script src="/scripts/moveProjectImage.js"></script>
+    <script src="/scripts/imgCarousel.js"></script>
+    <script src="/scripts/imgInteraction.js"></script>
+    <script src="/scripts/revealOnScroll.js"></script>
+</body>
+
+</html>
