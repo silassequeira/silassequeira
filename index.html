@@ -9,15 +9,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap"
-        rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +37,7 @@
                 <a href="aboutMe.html" class="button">More About Me</a>
             </div>
             <div class="imgContainer imgHeight-dynamic" id="differentHeight">
-                <img class="portrait" src="images/portrait-image.webp" fetchpriority="high" decoding="async" alt="portraitImage">
+                <img class="portrait" src="images/portrait-image.webp" fetchpriority="high" decoding="sync" alt="portraitImage">
             </div>
         </div>
 
@@ -53,7 +49,7 @@
             <div class="layoutGrid">
                 <div class="project">
                     <div class="imgContainer">
-                        <a href="projects.html#lobster"><img src="images/lobster-image.webp" decoding="async" alt="lobsterImage"></a>
+                        <a href="projects.html#lobster"><img src="images/lobster-image.webp" decoding="sync" alt="lobsterImage"></a>
                     </div>
                     <div class="infoFlex borderTop">
                         <h6>45 Days Website</h6>
@@ -62,7 +58,7 @@
                 </div>
                 <div class="project">
                     <div class="imgContainer">
-                        <a href="projects.html#CCDM"><img src="images/ccdm-image.webp" loading="lazy" decoding="async" alt="ccdmImage"></a>
+                        <a href="projects.html#CCDM"><img src="images/ccdm-image.webp" decoding="sync" alt="ccdmImage"></a>
                     </div>
                     <div class="infoFlex borderTop">
                         <h6>CCDM Website</h6>
@@ -71,7 +67,7 @@
                 </div>
                 <div class="project">
                     <div class="imgContainer">
-                        <a href="projects.html#Toaster"><img src="images/toaster-image.webp" decoding="async" alt="toasterImage"></a>
+                        <a href="projects.html#Toaster"><img src="images/toaster-image.webp" decoding="sync" alt="toasterImage"></a>
                     </div>
                     <div class="infoFlex borderTop">
                         <h6>Toaster Video</h6>
@@ -80,7 +76,7 @@
                 </div>
                 <div class="project">
                     <div class="imgContainer goSides">
-                        <a href="projects.html#Joke"><img src="images/ajoke-image.webp" decoding="async" alt="ajokeImage"></a>
+                        <a href="projects.html#Joke"><img src="images/ajoke-image.webp" decoding="sync" alt="ajokeImage"></a>
                     </div>
                     <div class="infoFlex borderTop">
                         <h6>A Joke Project</h6>
