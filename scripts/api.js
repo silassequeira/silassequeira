@@ -12,7 +12,7 @@ async function fetchJokes() {
     jokeElement.textContent = joke.joke;
 
     document.querySelector('.dad-joke').appendChild(jokeElement);
-    jokeElement.classList.toggle('serif');
+    jokeElement.classList.add('serif');
     
     console.log("Fetched joke data:", joke);
 }
