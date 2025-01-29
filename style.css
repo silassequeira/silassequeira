@@ -1,28 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap');
 
+
+:root {
+
+    --background: #1e1e1e;
+    --white: #f7f4f4;
+    --grey: #A7A7A7;
+    --grey-light: #D9D9D9;
+    --grey-dark: #7C7C7C;
+    --grey-darker: #5A5A5A;
+    --transition: all 0.3s ease;
+    --primary-font: 'Inter', sans-serif;
+    --serif-font: 'Playfair Display-Regular', serif;
+
+    color-scheme: light dark;
+
+    font-synthesis: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --background: #ffffff;
-    --text: #000000;
-    --text-light: #7F7F7F;
-    --transition: all 0.3s ease;
-    --primary-font: 'Inter', sans-serif;
-    --serif-font: 'Playfair Display-Regular', serif;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
     line-height: normal;
-    color: var(--text);
+    color: var(--white);
+    background: var(--background);
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+body {
+    line-height: normal;
+    color: var(--white);
     background: var(--background);
     overflow-x: hidden;
 }
@@ -36,7 +58,7 @@ h4,
 h5,
 h6 {
     font-family: var(--primary-font);
-    color: var(--text);
+    color: var(--white);
     font-weight: 500;
     text-align: left;
     transition: var(--transition);
@@ -93,7 +115,7 @@ header .logo {
 }
 
 header .logo:hover {
-    color: var(--text-light);
+    color: var(--white-light);
 }
 
 header input {
@@ -111,7 +133,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: var(--text-light);
+    color: var(--white-light);
 }
 
 main {
@@ -140,13 +162,13 @@ main {
 
 .button {
     font-family: var(--primary-font);
-    color: var(--text);
+    color: var(--white);
     font-size: 1.25rem;
     font-weight: 400;
     margin: 0 1rem;
     padding: 0.5rem 0.5rem;
     text-decoration: none;
-    border: 1px solid var(--text);
+    border: 1px solid var(--white);
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -154,9 +176,9 @@ main {
 }
 
 .infoFlex .button:hover {
-    background-color: var(--text);
+    background-color: var(--white);
     color: var(--background);
-    border: 1px solid var(--text);
+    border: 1px solid var(--white);
     transition: smooth;
 }
 
@@ -200,9 +222,9 @@ img {
     position: absolute;
     top: 5%;
     font-size: 1rem;
-    color: var(--text);
+    color: var(--white);
     background-color: transparent;
-    border: solid var(--text) 1.5px;
+    border: solid var(--white) 1.5px;
     padding: 0.5rem;
     border-radius: 10px;
     cursor: pointer;
@@ -224,7 +246,7 @@ img {
 }
 
 nav a:hover {
-    color: var(--text-light);
+    color: var(--white-light);
 }
 
 
@@ -288,13 +310,13 @@ main nav a {
 
 .serif {
     font-family: var(--serif-font);
-    color: var(--text);
+    color: var(--white);
     line-height: normal;
     transition: var(--transition);
 }
 
 .text-light {
-    color: var(--text-light);
+    color: var(--white-light);
     line-height: normal;
     transition: var(--transition);
 }
@@ -367,7 +389,7 @@ h5 {
 }
 
 .underline:hover {
-    color: var(--text-light);
+    color: var(--white-light);
     transition: var(--transition);
 }
 
@@ -429,7 +451,7 @@ h5 {
         display: block;
         text-align: center;
         padding: 2rem 0;
-        border-bottom: 1px solid var(--text-light);
+        border-bottom: 1px solid var(--white-light);
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 0.3s ease, transform 0.3s ease;
@@ -442,7 +464,7 @@ h5 {
     header label.active {
         display: flex;
         font-family: var(--primary-font);
-        color: var(--text);
+        color: var(--white);
         font-size: 1.25rem;
         font-weight: 500;
         margin: 0 1rem;
@@ -461,11 +483,11 @@ h5 {
         transition: max-height 0.5s ease-in-out;
     }
 
-    header input:checked ~ nav {
+    header input:checked~nav {
         max-height: 366px;
     }
 
-    header input:checked ~ nav a {
+    header input:checked~nav a {
         opacity: 1;
         transform: translateY(0);
     }
@@ -505,7 +527,7 @@ h5 {
     }
 
     .centered-marginTop:hover {
-        background-color: var(--text);
+        background-color: var(--white);
         color: var(--background);
     }
 
@@ -577,5 +599,17 @@ h5 {
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #ffffff;
+        --white: #1e1e1e;
+        --grey: #5A5A5A;
+        --grey-light: #7C7C7C;
+        --grey-dark: #A7A7A7;
+        --grey-darker: #D9D9D9;
     }
 }
