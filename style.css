@@ -129,6 +129,15 @@ header nav a:hover {
     color: var(--grey-light);
 }
 
+header path {
+    stroke: var(--white);
+}
+
+header svg:hover {
+    scale: 1.1;
+    transition: var(--transition);
+}
+
 main {
     margin-left: 1.875rem;
     margin-right: 1.875rem;
@@ -172,10 +181,11 @@ main {
 }
 
 .infoFlex .button:hover {
-    background-color: var(--white);
+    background-color: var(--grey-light);
     color: var(--background);
-    border: 1px solid var(--white);
+    border: 1px solid var(--grey-light);
     transition: smooth;
+    scale: 1.05;
 }
 
 .layoutGrid {
@@ -256,8 +266,9 @@ img {
     right: 10px;
 }
 
-nav a:hover {
-    color: var(--grey-light);
+.project .imgContainer:hover {
+    scale: 1.02;
+    transition: var(--transition);
 }
 
 
@@ -284,10 +295,16 @@ nav a:hover {
     min-height: 700px;
 }
 
+.container .sixColumns .imgContainer:hover {
+    scale: 1.01;
+    transition: var(--transition);
+}
+
 .container .sixColumns:nth-child(even) {
     direction: rtl;
 }
 
+.container .sixColumns:nth-child(even) .imgContainer,
 .container .sixColumns:nth-child(even) p,
 .container .sixColumns:nth-child(even) button {
     direction: ltr;
@@ -353,6 +370,7 @@ main nav a {
 
 .marginSides div {
     margin: 1rem 0;
+    color: var(--white);
 }
 
 .borderTop {
@@ -489,6 +507,11 @@ h5 {
         padding: 0 1rem;
     }
 
+    header nav a:hover {
+        scale: 1.1;
+        transition: var(--transition);
+    }
+
     main {
         margin: 2rem;
         padding: 3rem 2rem;
@@ -521,6 +544,7 @@ h5 {
         padding: 0 0.25rem;
         display: block;
         text-align: center;
+        color: var(--grey-light);
         padding: 2rem 0;
         border-bottom: 1px solid var(--grey-dark);
         opacity: 0;
@@ -530,6 +554,10 @@ h5 {
 
     header nav a:last-child {
         border-bottom: none;
+    }
+
+    header nav a:hover {
+        color: var(--white);
     }
 
     header label.active {
@@ -545,7 +573,7 @@ h5 {
 
     header nav {
         position: absolute;
-        top: 5.5rem;
+        top: 6.5rem;
         left: -10px;
         width: 105%;
         max-height: 0;
@@ -557,7 +585,6 @@ h5 {
     header input:checked~nav {
         max-height: 366px;
         border-radius: 12px;
-        border: var(--grey-dark) solid 1px;
     }
 
     header input:checked~nav a {
