@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container fullWidth">
             <div class="infoFlex">
                 <h2 class="serif">Take a Look at my Work !</h2>
             </div>
@@ -58,8 +59,10 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img class="carouselItem active" src="images/lobster-image.webp" fetchpriority="high" decoding="async" alt="lobster-image">
-                    <img class="carouselItem" src="images/lobster-presentation.webp" loading="lazy" decoding="async" alt="lobster-presentation">
+                    <img class="carouselItem active" src="images/lobster-image.webp" fetchpriority="high"
+                        decoding="async" alt="lobster-image">
+                    <img class="carouselItem" src="images/lobster-presentation.webp" loading="lazy" decoding="async"
+                        alt="lobster-presentation">
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
@@ -85,14 +88,16 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img class="carouselItem active" src="images/ccdm-image.webp" loading="lazy" decoding="async" alt="ccdm-image">
-                    <img class="carouselItem" src="images/ccdm-presentation.webp" loading="lazy" decoding="async" alt="ccdm-presentation">
+                    <img class="carouselItem active " src="images/ccdm-image.webp" loading="lazy" decoding="async"
+                        alt="ccdm-image">
+                    <img class="carouselItem  backgroundColor" src="images/ccdm-presentation.webp" loading="lazy"
+                        decoding="async" alt="ccdm-presentation">
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
             </div>
 
-            
+
             <div class="layoutGrid sixColumns reveal fade-bottom" id="Toaster" name="Toaster">
                 <div class="infoFlex column">
                     <div class="right">
@@ -113,8 +118,10 @@
                     </div>
                 </div>
                 <div class="imgContainer video">
-                    <img class="carouselItem active" src="images/toaster-image.webp" loading="lazy" decoding="async" alt="toaster-image">
-                    <video class="carouselItem" src="videos/theToastervid.mp4" controls autoplay muted loading="lazy" decoding="async" alt="theToastervid"></video>
+                    <img class="carouselItem active " src="images/toaster-image.webp" loading="lazy" decoding="async"
+                        alt="toaster-image">
+                    <video class="carouselItem" src="videos/theToastervid.mp4" controls autoplay muted loading="lazy"
+                        decoding="async" alt="theToastervid"></video>
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
@@ -140,8 +147,10 @@
                     </div>
                 </div>
                 <div class="imgContainer goSides video">
-                    <img class="carouselItem active img" src="images/ajoke-image.webp" loading="lazy" decoding="async" alt="ajoke-image">
-                    <video class="carouselItem" src="videos/aJokevid.mp4" controls autoplay muted loading="lazy" decoding="async" alt="aJokevid"></video>
+                    <img class="carouselItem active img" src="images/ajoke-image.webp" loading="lazy" decoding="async"
+                        alt="ajoke-image">
+                    <video class="carouselItem" src="videos/aJokevid.mp4" controls autoplay muted loading="lazy"
+                        decoding="async" alt="aJokevid"></video>
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
@@ -150,8 +159,8 @@
     </main>
     <script src="scripts/showMore.js"></script>
     <script src="scripts/moveProjectImage.js"></script>
-    <script src="scripts/imgCarousel.js"></script>
     <script src="scripts/imgInteraction.js"></script>
+    <script src="scripts/imgCarousel.js"></script>
     <script src="scripts/revealOnScroll.js"></script>
 </body>
 
