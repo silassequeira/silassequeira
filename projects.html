@@ -159,13 +159,48 @@
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
             </div>
+
+            <div class="layoutGrid sixColumns reveal fade-bottom" id="artRush" name="artRush">
+                <div class="infoFlex column">
+                    <div class="right">
+                        <h4>Art Rush Website</h4>
+                        <h5 class="text-light">2024</h5>
+                    </div>
+                    <div>
+                        <h6 class="text-light">Details</h6>
+                        <p class="textLimiter">Our multimedia object is a dating website based on the film “The Lobster”
+                            directed by Yorgos Lanthimos, which portrays a dystopia where people are forced to get
+                            married, have a partner,
+                            or be turned into animals. In this goal, we implemented the website where the user must
+                            register, fill out a form with personal questions and then they can choose and match the
+                            suggested people. They can then book a room and choose activities with their match or choose
+                            another person and have access to their profile.
+                        </p>
+                        <p class="showMore text-light">Read more</p>
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <img class="carouselItem active" src="images/artRush2.webp" fetchpriority="high" decoding="async"
+                        alt="artRush-image">
+                    <img class="carouselItem" src="images/artRush1.webp" loading="lazy" decoding="async"
+                        alt="artRush-image">
+                    <video class="carouselItem" src="videos/artRush.webm" controls autoplay muted loading="lazy"
+                        decoding="async" alt="artRush"></video>
+                    <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
         </div>
+        <button id="backToTop" class="back-to-top">↑</button>
+
     </main>
     <script src="scripts/showMore.js"></script>
     <script src="scripts/moveProjectImage.js"></script>
     <script src="scripts/imgInteraction.js"></script>
     <script src="scripts/imgCarousel.js"></script>
     <script src="scripts/revealOnScroll.js"></script>
+    <script src="scripts/backToTop.js"></script>
+
 </body>
 
 </html>

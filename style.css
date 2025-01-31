@@ -4,7 +4,7 @@
 
 :root {
 
-    --background: #1e1e1e;
+    --background: #1b1b1b;
     --white: #f7f4f4;
     --grey: #A7A7A7;
     --grey-light: #D9D9D9;
@@ -243,9 +243,10 @@ img {
     position: absolute;
     top: 5%;
     font-size: 1rem;
-    color: var(--background);
+    color: var(--grey-light);
     background-color: transparent;
-    border: solid var(--background) 1.5px;
+    border: solid var(--grey-light) 1.7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 0.5rem;
     border-radius: 10px;
     cursor: pointer;
@@ -267,6 +268,11 @@ img {
 }
 
 .project .imgContainer:hover {
+    scale: 1.02;
+    transition: var(--transition);
+}
+
+.container .video:hover {
     scale: 1.02;
     transition: var(--transition);
 }
@@ -487,6 +493,81 @@ h5 {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--grey-light);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--grey-darker);
+    /* Bright green background */
+    color: white;
+    /* White icon */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    /* Slightly larger */
+    height: 50px;
+    /* Slightly larger */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(191, 191, 191, 0.3);
+    /* Green-tinted shadow */
+}
+
+.back-to-top:hover {
+    background-color: var(--background);
+    /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(144, 144, 144, 0.4);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Add a subtle pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    animation: pulse 2s infinite;
+}
+
+.back-to-top:hover {
+    animation: none;
+    /* Stop pulsing on hover */
+    background-color: var(--grey-light);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media (min-width: 1200px) {
