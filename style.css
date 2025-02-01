@@ -312,6 +312,7 @@ img {
 
 .container .sixColumns:nth-child(even) .imgContainer,
 .container .sixColumns:nth-child(even) p,
+.container .sixColumns:nth-child(even) a,
 .container .sixColumns:nth-child(even) button {
     direction: ltr;
 }
@@ -367,6 +368,10 @@ main nav a {
     padding: 1rem 0;
 }
 
+.smallMarginTop {
+    margin-top: 1rem;
+}
+
 .marginSides {
     margin-left: 5rem;
     margin-right: 5rem;
@@ -396,6 +401,11 @@ main nav a {
 
 .right {
     align-self: flex-end;
+}
+
+.textAlignLeft {
+    display: flex;
+    margin-top: 1rem;
 }
 
 .right h4,
