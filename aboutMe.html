@@ -5,16 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <meta name="description" content="Portfolio of Silas Sequeira - Learn a little bit more about me.">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -59,7 +55,11 @@
                     </div>
                 </div>
                 <div class="imgContainer imgHeight">
-                    <img class="portrait" src="images/24cropped.webp" fetchpriority="high" decoding="async"
+                    <img class="portrait" src="images/24cropped.webp" srcset="images/24cropped-mobile.webp 400w,
+                                 images/24cropped-tablet.webp 800w,
+                                 images/24cropped.webp 1200w" sizes="(max-width: 480px) 400px,
+                                (max-width: 768px) 800px,
+                                1200px" fetchpriority="high" decoding="async" width="1200" height="800"
                         alt="Illustration of Portrait">
                 </div>
             </div>
