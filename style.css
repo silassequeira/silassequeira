@@ -315,6 +315,7 @@ img {
 }
 
 .container .sixColumns:nth-child(even) .imgContainer,
+.container .sixColumns:nth-child(even) span,
 .container .sixColumns:nth-child(even) p,
 .container .sixColumns:nth-child(even) a,
 .container .sixColumns:nth-child(even) button {
@@ -581,6 +582,17 @@ h5 {
     /* Stop pulsing on hover */
     background-color: var(--grey-light);
     transform: translateY(-2px);
+}
+
+.goSides {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.goSides img {
+    max-height: 1200px;
 }
 
 @media (max-width: 768px) {
