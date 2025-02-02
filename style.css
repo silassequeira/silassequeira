@@ -51,6 +51,7 @@ h2,
 h3,
 h4,
 h5,
+span,
 h6 {
     font-family: var(--primary-font);
     color: var(--white);
@@ -79,6 +80,7 @@ h5 {
     font-size: 1.5rem;
 }
 
+span,
 h6 {
     font-size: 1rem;
 }
