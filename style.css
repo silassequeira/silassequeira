@@ -52,6 +52,7 @@ h3,
 h4,
 h5,
 span,
+div,
 h6 {
     font-family: var(--primary-font);
     color: var(--white);
@@ -72,10 +73,12 @@ h3 {
     font-size: 3rem;
 }
 
+.size1,
 h4 {
     font-size: 2rem;
 }
 
+.size2,
 h5 {
     font-size: 1.5rem;
 }
@@ -93,6 +96,10 @@ p {
 a {
     font-size: 1.25rem;
     text-decoration: none;
+}
+
+span {
+    display: flex;
 }
 
 header {
@@ -315,7 +322,7 @@ img {
 }
 
 .container .sixColumns:nth-child(even) .imgContainer,
-.container .sixColumns:nth-child(even) span,
+.container .sixColumns:nth-child(even) div:nth-child(2) span,
 .container .sixColumns:nth-child(even) p,
 .container .sixColumns:nth-child(even) a,
 .container .sixColumns:nth-child(even) button {
@@ -413,8 +420,8 @@ main nav a {
     margin-top: 1rem;
 }
 
-.right h4,
-h5 {
+.right span {
+    justify-content: flex-end;
     text-align: right;
     margin: 0 0;
     padding: 0 0;

@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <meta name="description"
+        content="Portfolio of Silas Sequeira - Explore my selected projects and creative work in web development, digital art and design.">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -46,8 +48,8 @@
             <div class="layoutGrid sixColumns" id="lobster" name="lobster">
                 <div class="infoFlex column">
                     <div class="right">
-                        <h4>45 Days Website</h4>
-                        <h5 class="text-light">2024</h5>
+                        <span class="size1">45 Days Website</span>
+                        <span class="text-light size2">2024</span>
                     </div>
                     <div>
                         <span class="text-light">Details</span>
@@ -68,10 +70,18 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img class="carouselItem active" src="images/lobster-image.webp" fetchpriority="high"
-                        decoding="async" alt="lobster-image">
-                    <img class="carouselItem" src="images/lobster-presentation.webp" loading="lazy" decoding="async"
-                        alt="lobster-presentation">
+                    <img class="carouselItem active" src="images/lobster-image.webp" srcset="images/lobster-mobile.webp 400w,
+                            images/lobster-tablet.webp 800w,
+                            images/lobster-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" fetchpriority="high" decoding="async" width="1200" height="800"
+                        alt="45 Days Website project preview">
+                    <img class="carouselItem" src="images/lobster-presentation.webp" srcset="images/lobster-presentation-mobile.webp 400w,
+                            images/lobster-presentation-tablet.webp 800w,
+                            images/lobster-presentation.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" loading="lazy" decoding="async" width="1200" height="800"
+                        alt="45 Days Website presentation">
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
@@ -80,8 +90,8 @@
             <div class="layoutGrid sixColumns reveal fade-bottom" id="CCDM" name="CCDM">
                 <div class="infoFlex column">
                     <div class="right">
-                        <h4>CCDM Website</h4>
-                        <h5 class="text-light">2022</h5>
+                        <span class="size1">CCDM Website</span>
+                        <span class="text-light size2">2022</span>
                     </div>
 
                     <div>
@@ -119,10 +129,18 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img class="carouselItem active " src="images/ccdm-image.webp" loading="lazy" decoding="async"
-                        alt="ccdm-image">
-                    <img class="carouselItem  backgroundColor" src="images/ccdm-presentation.webp" loading="lazy"
-                        decoding="async" alt="ccdm-presentation">
+                    <img class="carouselItem active" src="images/ccdm-image.webp" srcset="images/ccdm-mobile.webp 400w,
+                            images/ccdm-tablet.webp 800w,
+                            images/ccdm-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" loading="lazy" decoding="async" width="1200" height="800"
+                        alt="CCDM Website project preview">
+                    <img class="carouselItem backgroundColor" src="images/ccdm-presentation.webp" srcset="images/ccdm-presentation-mobile.webp 400w,
+                            images/ccdm-presentation-tablet.webp 800w,
+                            images/ccdm-presentation.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" loading="lazy" decoding="async" width="1200" height="800"
+                        alt="CCDM Website presentation">
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
@@ -132,8 +150,8 @@
             <div class="layoutGrid sixColumns reveal fade-bottom" id="Toaster" name="Toaster">
                 <div class="infoFlex column">
                     <div class="right">
-                        <h4>Toaster Video</h4>
-                        <h5 class="text-light">2024</h5>
+                        <span class="size1">Toaster Video</span>
+                        <span class="text-light size2">2024</span>
                     </div>
                     <div>
                         <span class="text-light">Details</span>
@@ -147,10 +165,15 @@
                     </div>
                 </div>
                 <div class="imgContainer goSides">
-                    <img class="carouselItem active " src="images/toaster-image.webp" loading="lazy" decoding="async"
-                        alt="toaster-image">
+                    <img class="carouselItem active" src="images/toaster-image.webp" srcset="images/toaster-mobile.webp 400w,
+                            images/toaster-tablet.webp 800w,
+                            images/toaster-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" loading="lazy" decoding="async" width="1200" height="800"
+                        alt="Toaster Video project preview">
                     <video class="carouselItem" src="videos/theToastervid.mp4" controls autoplay muted loading="lazy"
-                        decoding="async" alt="theToastervid"></video>
+                        decoding="async" title="Toaster Video">
+                    </video>
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
@@ -159,8 +182,8 @@
             <div class="layoutGrid sixColumns reveal fade-bottom" id="Joke" name="Joke">
                 <div class="infoFlex column">
                     <div class="right">
-                        <h4>A Joke Project</h4>
-                        <h5 class="text-light">2023</h5>
+                        <span class="size1">A Joke Project</span>
+                        <span class="text-light size2">2023</span>
                     </div>
                     <div>
                         <span class="text-light">Details</span>
@@ -192,10 +215,14 @@
                     </div>
                 </div>
                 <div class="imgContainer goSides">
-                    <img class="carouselItem active img" src="images/ajoke-image.webp" loading="lazy" decoding="async"
-                        alt="ajoke-image">
+                    <img class="carouselItem active img" src="images/ajoke-image.webp" srcset="images/ajoke-mobile.webp 400w,
+                            images/ajoke-tablet.webp 800w,
+                            images/ajoke-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" loading="lazy" decoding="async" width="1200" height="800"
+                        alt="A Joke Project preview">
                     <video class="carouselItem" src="videos/aJokevid.mp4" controls autoplay muted loading="lazy"
-                        decoding="async" alt="aJokevid"></video>
+                        decoding="async" title="aJokevid"></video>
                     <img class="carouselItem img" src="images/cards.webp" loading="lazy" decoding="async"
                         alt="cards-image">
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
@@ -206,8 +233,8 @@
             <div class="layoutGrid sixColumns reveal fade-bottom" id="artRush" name="artRush">
                 <div class="infoFlex column">
                     <div class="right">
-                        <h4>Art Rush Website</h4>
-                        <h5 class="text-light">2024</h5>
+                        <span class="size1">Art Rush Website</span>
+                        <span class="text-light size2">2024</span>
                     </div>
                     <div>
                         <span class="text-light">Details</span>
@@ -225,12 +252,20 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img class="carouselItem active" src="images/artRush2.webp" fetchpriority="high" decoding="async"
-                        alt="artRush-image">
-                    <img class="carouselItem" src="images/artRush1.webp" loading="lazy" decoding="async"
-                        alt="artRush-image">
+                    <img class="carouselItem active" src="images/artRush2.webp" srcset="images/artRush2-mobile.webp 400w,
+                            images/artRush2-tablet.webp 800w,
+                            images/artRush2.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" fetchpriority="high" decoding="async" width="1200" height="800"
+                        alt="Art Rush Website homepage">
+                    <img class="carouselItem" src="images/artRush1.webp" srcset="images/artRush1-mobile.webp 400w,
+                            images/artRush1-tablet.webp 800w,
+                            images/artRush1.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" loading="lazy" decoding="async" width="1200" height="800"
+                        alt="Art Rush Website feature preview">
                     <video class="carouselItem" src="videos/artRushPlay.mp4" controls autoplay muted loading="lazy"
-                        decoding="async" alt="artRush"></video>
+                        decoding="async" title="artRush"></video>
                     <button class="carouselPrev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carouselNext" onclick="changeSlide(1)">&#10095;</button>
                 </div>
