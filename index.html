@@ -42,8 +42,12 @@
                 <a href="aboutMe.html" aria-label="Go to About Page" class="button">More About Me</a>
             </div>
             <div class="imgContainer imgHeight-dynamic" id="differentHeight">
-                <img class="portrait" src="images/portrait-image.webp" fetchpriority="high" decoding="sync"
-                    alt="Portrait of Silas Sequeira">
+                <img class="portrait" src="images/portrait-image.webp" srcset="images/portrait-mobile.webp 400w,
+                            images/portrait-tablet.webp 800w,
+                            images/portrait-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                           (max-width: 768px) 800px,
+                           1200px" loading="eager" decoding="sync" alt="Portrait of Silas Sequeira" width="1200"
+                    height="800">
             </div>
         </div>
 
@@ -69,40 +73,65 @@
             <div class="layoutGrid">
                 <div class="project">
                     <div class="imgContainer">
-                        <a href="projects.html#lobster" aria-label="Go to Projects Page"><img
-                                src="images/lobster-image.webp" decoding="sync"
-                                alt="Preview of 45 Days Website project"></a>
+                        <a href="projects.html#lobster" aria-label="View 45 Days Website project">
+                            <img src="images/lobster-image.webp" srcset="images/lobster-mobile.webp 400w,
+                                         images/lobster-tablet.webp 800w,
+                                         images/lobster-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                                        (max-width: 768px) 800px,
+                                        1200px" loading="lazy" decoding="sync" width="1200" height="800"
+                                alt="Preview of 45 Days Website project">
+                        </a>
                     </div>
                     <div class="infoFlex borderTop">
                         <span>45 Days Website</span>
                         <span>2024</span>
                     </div>
                 </div>
+
                 <div class="project">
                     <div class="imgContainer">
-                        <a href="projects.html#CCDM" aria-label="Go to Projects Page"><img src="images/ccdm-image.webp"
-                                decoding="sync" alt="Preview of CCDM Website project"></a>
+                        <a href="projects.html#CCDM" aria-label="View CCDM Website project">
+                            <img src="images/ccdm-image.webp" srcset="images/ccdm-mobile.webp 400w,
+                                         images/ccdm-tablet.webp 800w,
+                                         images/ccdm-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                                        (max-width: 768px) 800px,
+                                        1200px" loading="lazy" decoding="sync" width="1200" height="800"
+                                alt="Preview of CCDM Website project">
+                        </a>
                     </div>
                     <div class="infoFlex borderTop">
                         <span>CCDM Website</span>
                         <span>2022</span>
                     </div>
                 </div>
+
                 <div class="project">
                     <div class="imgContainer">
-                        <a href="projects.html#Toaster" aria-label="Go to Projects Page"><img
-                                src="images/toaster-image.webp" decoding="sync"
-                                alt="Preview of Toaster Video project"></a>
+                        <a href="projects.html#Toaster" aria-label="View Toaster Video project">
+                            <img src="images/toaster-image.webp" srcset="images/toaster-mobile.webp 400w,
+                                         images/toaster-tablet.webp 800w,
+                                         images/toaster-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                                        (max-width: 768px) 800px,
+                                        1200px" loading="lazy" decoding="sync" width="1200" height="800"
+                                alt="Preview of Toaster Video project">
+                        </a>
                     </div>
                     <div class="infoFlex borderTop">
                         <span>Toaster Video</span>
                         <span>2024</span>
                     </div>
                 </div>
+
                 <div class="project">
                     <div class="imgContainer goSides">
-                        <a href="projects.html#Joke" aria-label="Go to Projects Page"><img src="images/ajoke-image.webp"
-                                decoding="sync" alt="Preview of A Joke Project"></a>
+                        <a href="projects.html#Joke" aria-label="View A Joke Project">
+                            <img src="images/ajoke-image.webp" srcset="images/ajoke-mobile.webp 400w,
+                                         images/ajoke-tablet.webp 800w,
+                                         images/ajoke-image.webp 1200w" sizes="(max-width: 480px) 400px,
+                                        (max-width: 768px) 800px,
+                                        1200px" loading="lazy" decoding="sync" width="1200" height="800"
+                                alt="Preview of A Joke Project">
+                        </a>
                     </div>
                     <div class="infoFlex borderTop">
                         <span>A Joke Project</span>
