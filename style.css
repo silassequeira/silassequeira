@@ -228,7 +228,12 @@ img {
     min-height: 500px;
     object-fit: cover;
     display: block;
+    filter: blur(10px);
     transition: object-position 5s ease-in-out;
+}
+
+.loaded {
+    filter: blur(0);
 }
 
 .imageScroll {

@@ -1,67 +1,61 @@
 const applyHoverEffects = () => {
-    document.querySelectorAll('.imgContainer').forEach(container => {
+    const calcObjectPosition = (position, dimension, isGoSides) => {
+        const pos = position / dimension;
+        return pos < 1 / 3 ? (isGoSides ? 'center left' : 'center top') :
+            pos > 2 / 3 ? (isGoSides ? 'center right' : 'center bottom') :
+                'center center';
+    };
+
+    const updateStyles = (elements, styles) =>
+        elements.forEach(el => Object.assign(el.style, styles));
+
+    [...document.querySelectorAll('.imgContainer')].forEach(container => {
         const isGoSides = container.classList.contains('goSides');
-        const isGoSidesBoolean = isGoSides ? true : false;
-        const images = container.querySelectorAll('img');
+        const images = [...container.querySelectorAll('img')];
         let isScrolling = false;
 
-        images.forEach(img => {
-            const updateObjectPosition = ({ clientX, clientY }) => {
+        const handlers = {
+            mousemove: event => {
                 if (isScrolling) return;
 
                 const { left, top, width, height } = container.getBoundingClientRect();
-                const position = isGoSides ? clientX - left : clientY - top;
+                const position = isGoSides ? event.clientX - left : event.clientY - top;
                 const dimension = isGoSides ? width : height;
 
-                img.style.objectPosition =
-                    position < dimension / 3 ? (isGoSides ? 'center left' : 'center top') :
-                        position > (2 * dimension) / 3 ? (isGoSides ? 'center right' : 'center bottom') :
-                            'center center';
-            };
+                updateStyles(images, {
+                    height: isGoSides ? 'revert-layer' : '100%',
+                    objectPosition: calcObjectPosition(position, dimension, isGoSides)
+                });
+            },
 
-            container.addEventListener('mousemove', (event) => {
-                if (!isScrolling && !isGoSidesBoolean) {
-                    images.forEach(image => image.style.height = "100%");
-                    updateObjectPosition(event);
-                } else if (isGoSidesBoolean) {
-                    images.forEach(image => {
-                        image.style.height = "revert-layer";
-                    });
-                    updateObjectPosition(event);
-                }
-            });
-
-            container.addEventListener('click', () => {
+            click: () => {
                 isScrolling = true;
-                images.forEach(image => {
-                    if (isGoSides) {
-                        image.style.height = "revert-layer";
-                        image.style.width = "auto";
-                        container.style.overflowX = "scroll";
-                        container.style.overflowY = "hidden";
-                    } else {
-                        image.style.height = "auto";
-                        container.style.overflowY = "scroll";
-                    }
+                updateStyles(images, {
+                    height: isGoSides ? 'revert-layer' : 'auto',
+                    width: isGoSides ? 'auto' : null
                 });
-            });
+                Object.assign(container.style, {
+                    overflowX: isGoSides ? 'scroll' : 'hidden',
+                    overflowY: isGoSides ? 'hidden' : 'scroll'
+                });
+            },
 
-            container.addEventListener('mouseleave', () => {
+            mouseleave: () => {
                 isScrolling = false;
-                images.forEach(image => {
-                    if (isGoSidesBoolean) {
-                        image.style.height = "revert-layer";
-                        image.style.width = "100%";
-                        image.style.objectPosition = 'center left';
-                        container.style.overflowX = "hidden";
-                    } else {
-                        image.style.height = "100%";
-                        image.style.objectPosition = 'center top';
-                    }
+                updateStyles(images, {
+                    height: isGoSides ? 'revert-layer' : '100%',
+                    width: isGoSides ? '100%' : null,
+                    objectPosition: isGoSides ? 'center left' : 'center top'
                 });
-                container.style.overflowY = "hidden";
-            });
-        });
+                Object.assign(container.style, {
+                    overflowX: 'hidden',
+                    overflowY: 'hidden'
+                });
+            }
+        };
+
+        Object.entries(handlers).forEach(([event, handler]) =>
+            container.addEventListener(event, handler));
     });
 };
 

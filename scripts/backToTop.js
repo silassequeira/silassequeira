@@ -1,26 +1,17 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const backToTopButton = document.getElementById('backToTop');
-    const thirdGrid = document.querySelectorAll('.layoutGrid')[1]; // Get the third grid
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = ['backToTop', '.layoutGrid'].reduce((acc, selector) => ({
+        ...acc,
+        [selector === 'backToTop' ? 'button' : 'grid']:
+            selector.includes('.')
+                ? [...document.querySelectorAll(selector)][1]
+                : document.getElementById(selector)
+    }), {});
 
-    // Function to check scroll position
-    function toggleBackToTopButton() {
-        const thirdGridPosition = thirdGrid.getBoundingClientRect().top;
+    const toggleVisibility = () =>
+        elements.button.classList[elements.grid.getBoundingClientRect().top < 0 ? 'add' : 'remove']('visible');
 
-        if (thirdGridPosition < 0) {
-            backToTopButton.classList.add('visible');
-        } else {
-            backToTopButton.classList.remove('visible');
-        }
-    }
+    elements.button.addEventListener('click', () =>
+        window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // Smooth scroll to top
-    backToTopButton.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-
-    // Listen for scroll events
-    window.addEventListener('scroll', toggleBackToTopButton);
+    window.addEventListener('scroll', toggleVisibility);
 });
