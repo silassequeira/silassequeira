@@ -558,6 +558,18 @@ main nav a {
     border-radius: 15px;
 }
 
+.social-links a {
+    color: var(--grey-light);
+    font-size: 1.4rem;
+    margin: 0 0.5rem;
+}
+
+.copyright {
+    color: var(--grey-light);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
 @keyframes pulse {
     0% {
         transform: scale(1);
