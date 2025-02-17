@@ -301,6 +301,31 @@ img {
     transition: var(--transition);
 }
 
+@media (max-width: 500px) {
+    .carouselItem {
+        width: 500px;
+    }
+}
+
+@media (max-width: 995px) {
+    .carouselItem {
+        width: 800px;
+    }
+
+    .back-to-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carouselItem {
+        width: 1200px;
+    }
+}
+
 .container .video:hover {
     scale: 1.01;
     transition: var(--transition);
@@ -621,15 +646,6 @@ main nav a {
 
 .goSides img {
     max-height: 1200px;
-}
-
-@media (max-width: 768px) {
-    .back-to-top {
-        bottom: 1.5rem;
-        right: 1.5rem;
-        width: 45px;
-        height: 45px;
-    }
 }
 
 @media (min-width: 1200px) {
