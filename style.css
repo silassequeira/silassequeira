@@ -173,6 +173,18 @@ main {
     padding: 0.5rem 0;
 }
 
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.wrap a {
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+}
+
 .button {
     font-family: var(--primary-font);
     color: var(--white);
@@ -200,6 +212,10 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
+}
+
+.justifyEnd {
+    justify-content: flex-end;
 }
 
 .imgContainer {
