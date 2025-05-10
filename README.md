@@ -1,4 +1,13 @@
-# Assignment 2 — Static Website
+# Portefolio Website
+
+Creative designer and developer with a Bachelor’s Degree in Design and Multimedia and a strong foundation in Visual Arts. Skilled in graphic design, web
+development, and multimedia production, with a sharp eye for aesthetics and
+user experience. A fast learner with problem-solving skills, fluent in Portuguese
+and English, and a good communicator.
+Beyond design and development, I am the frontman of the garage rock band
+“Bumps” and an avid enthusiast of art and technology. Passionate about video
+game development, digital illustration, film, and music, continuously exploring creative projects that bridge art and technology.
+
 In this assignment, I created my own portefolio static website.
      * index.html
      * aboutMe.html
