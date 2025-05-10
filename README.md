@@ -1,7 +1,7 @@
 # Portefolio Website
 
-[Go to another page](https://silassequeira.dei.uc.pt/)
-[Go to another page](https://silassequeira.github.io/silassequeira/)
+[silassequeira.dei.uc.pt](https://silassequeira.dei.uc.pt/)
+[silassequeira.github.io](https://silassequeira.github.io/silassequeira/)
 
 Creative designer and developer with a Bachelor’s Degree in Design and Multimedia and a strong foundation in Visual Arts. Skilled in graphic design, web
 development, and multimedia production, with a sharp eye for aesthetics and
